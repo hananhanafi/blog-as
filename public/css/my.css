@@ -1,0 +1,45 @@
+.capt{
+    width: 50%;
+    height: 100%;
+    position: ;
+    background-color: #f1f1f1;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+  .center {
+    margin: 0;
+    position: absolute;
+    width: 50%;
+    top: 50%;
+    /* left: 50%; */
+    /* -ms-transform: translate(-50%, -50%); */
+    transform: translate(0, -50%);
+  }
+  
+
+
+.side-bg{
+    z-index: -1;
+    position: ;
+    right: 0;
+    bottom: 0;
+   /* or any custom size */
+    /* height:100%; 
+    width: 100%; */
+    width: 50%;
+    height: 100%;
+    object-fit: contain;
+    background: url(../images/bg.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.capt img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
