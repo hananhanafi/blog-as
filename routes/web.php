@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('index');
 });
+
+Route::get('/blog','ArticleController@index');
+Route::get('/blog/read','ArticleController@profile');
+Route::get('/category','CategoryController@index');

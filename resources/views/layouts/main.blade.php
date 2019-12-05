@@ -15,7 +15,7 @@
         <title>@yield('title')</title>
     </head>
     <body>
-        <nav class="fixed-top navbar navbar-expand-lg navbar-light ">
+        <nav class=" navbar navbar-expand-lg navbar-light bg-secondary ">
             <div class="container">
                 <a class="navbar-brand" href="#">Hanan Hanafi</a>
                 <button
@@ -31,14 +31,14 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Home
+                            <a class="nav-link" href="/">Home
                                 <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Blog</a>
+                            <a class="nav-link" href="/blog">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Categories</a>
+                            <a class="nav-link" href="/category">Categories</a>
                         </li>
                     </ul>
                 </div>
