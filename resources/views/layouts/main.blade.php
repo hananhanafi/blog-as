@@ -35,7 +35,7 @@
                                 <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/blog">Blog</a>
+                            <a class="nav-link" href="/article">Blog</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/category">Categories</a>

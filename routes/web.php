@@ -15,6 +15,12 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/blog','ArticleController@index');
-Route::get('/blog/read','ArticleController@profile');
 Route::get('/category','CategoryController@index');
+Route::post('/category/store','CategoryController@store');
+Route::post('/category/{id}/update','CategoryController@update');
+Route::get('/category/{id}/delete','CategoryController@delete');
+
+
+Route::get('/article','ArticleController@index');
+Route::get('/article/create','ArticleController@create');
+Route::get('/article/{id}/show','ArticleController@show');
