@@ -27,7 +27,8 @@ class ArticleController extends Controller
      */
     public function create()
     {
-        
+        $categories = Category::all();
+        return view('article.create',['categories' => $categories]);
     }
 
     /**
@@ -38,7 +39,8 @@ class ArticleController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $article = Article::create($request->all());
+        return redirect('/article')->with('sukses','Data berhasil disimpan');
     }
 
     /**
@@ -62,8 +64,11 @@ class ArticleController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
-    {
-        //
+    {  
+        $article = Article::find($id);
+        $category = Category::find($article->category_id);
+        $data_categories = Category::all();
+        return view('article.edit',['article' => $article, 'selectedCategory' => $category , 'data_categories' => $data_categories]);
     }
 
     /**
@@ -75,7 +80,9 @@ class ArticleController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $article = Article::find($id);
+        $article->update($request->all());
+        return redirect('/article');
     }
 
     /**
@@ -88,7 +95,10 @@ class ArticleController extends Controller
     {
         //
     }
-    public function profile(){
-        return view('article.article');
+    
+    public function delete($id){
+        $article = Article::find($id);
+        $article->delete();
+        return redirect('/article')->with('sukses','data berhasil dihapus');
     }
 }

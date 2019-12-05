@@ -24,3 +24,9 @@ Route::get('/category/{id}/delete','CategoryController@delete');
 Route::get('/article','ArticleController@index');
 Route::get('/article/create','ArticleController@create');
 Route::get('/article/{id}/show','ArticleController@show');
+Route::post('/article/store','ArticleController@store');
+Route::get('/article/{id}/edit','ArticleController@edit');
+Route::post('/article/{id}/update','ArticleController@update');
+Route::get('/article/{id}/delete','ArticleController@delete');
+
+
