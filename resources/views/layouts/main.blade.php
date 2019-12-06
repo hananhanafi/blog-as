@@ -13,6 +13,9 @@
         <link
             rel="stylesheet"
             href="{{ asset('/css/my.css') }}">
+            <link
+            rel="stylesheet"
+            href="/css/my.css">
         <title>@yield('title')</title>
     </head>
     <body>
